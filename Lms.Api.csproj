@@ -7,6 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Dto\**" />
+    <Compile Remove="Entities\**" />
+    <Compile Remove="Migrations\**" />
+    <Content Remove="Dto\**" />
+    <Content Remove="Entities\**" />
+    <Content Remove="Migrations\**" />
+    <EmbeddedResource Remove="Dto\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Dto\**" />
+    <None Remove="Entities\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Bogus" Version="34.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="6.0.2" />
